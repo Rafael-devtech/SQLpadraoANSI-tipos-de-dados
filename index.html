@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="icon" href="./src/assets/icone.png">
+    <title>Tipos de Dados em SQL padrão ANSI</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Tipos de Dados em SQL padrão ANSI</h1>
+            <nav>
+                <ul>
+                    <li><a href="#numericos">Numéricos</a></li>
+                    <li><a href="#caracteres">Caracteres</a></li>
+                    <li><a href="#binarios">Binários</a></li>
+                    <li><a href="#temporais">Temporais</a></li>
+                    <li><a href="#grandes">Grandes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="conteudo">
+            <main>
+                <section id="numericos">
+                    <h1>Dados Numéricos</h1>
+                    <article class="dado">
+                        <h2>INTEGER</h2>
+                        <h3>Definição</h3>
+                        <p>Pode ser usado como "INT" ou "INTEGER", armazena números inteiros sem ter um tamanho fixo, mas geralmente ocupa em torno de 4 bytes.</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1: 1234567</li>
+                            <li>Ex2: 5475543</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>SMALLINT</h2>
+                        <h3>Definição</h3>
+                        <p>Número inteiro menor que o INT, que normalmente ocupa 2 bytes, mas também não tem tamanho fixo.</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1: 15</li>
+                            <li>Ex2: 6787</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>BIGINT</h2>
+                        <h3>Definição</h3>
+                        <p>Número inteiro maior que o INT, normalmente ocupa 8 bytes mas não tem tamanho fixo.</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1: 78.436.785.647</li>
+                            <li>Ex2: 25.649.275.643.855</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>DECIMAL</h2>
+                        <h3>Definição</h3>
+                        <p>Número com precisão fixa, é usado como DECIMAL(P,S) onde "p" determina a quantidade de caracteres totais e "s" a quantidade de caracteres nas casas decimais.</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1: DECIMAL(5,2) pode abrigar: 123,45</li>
+                            <li>Ex2: DECIMAL(10,5) pode abrigar: 53752,74095</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>FLOAT</h2>
+                        <h3>Definição</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse tempore doloremque quaerat veniam. Tempore accusantium a, eveniet doloribus repellendus ex quas? Corporis sunt, cum quasi libero earum harum asperiores numquam.</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1:</li>
+                            <li>Ex2:</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>REAL</h2>
+                        <h3>Definição</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste architecto blanditiis eos officiis. Itaque dolore sunt minima, aperiam quaerat odio placeat dicta dignissimos provident id necessitatibus nihil fugiat vero.</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1:</li>
+                            <li>Ex2:</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>DOUBLE PRECISION</h2>
+                        <h3>Definição</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nostrum molestiae corrupti harum a dolor explicabo dolorem, magnam deleniti tempore laboriosam quibusdam saepe excepturi ipsa cum natus, odit nobis blanditiis.</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1:</li>
+                            <li>Ex2:</li>
+                        </ul>
+                    </article>
+                </section>
+                <section id="caracteres">
+                    <h1>Dados de Caractere</h1>
+                    <article class="dado">
+                        <h2>CHAR</h2>
+                        <h3>Definição</h3>
+                        <p>É usado como CHAR(n), sendo "n" o tamanho fixo (que pode variar de 0 a 225 caracteres). CHAR pode armazenar qualquer string.</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1: CHAR(3) pode armazenar: 1a3</li>
+                            <li>Ex2: CHAR(10) pode armazenar: 7m9463of75</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>VARCHAR</h2>
+                        <h3>Definição</h3>
+                        <p>É usado como VARCHAR(n), sendo "n" o tamanho máximo, dentro desse espaço o tamanho pode variar (até 65535 caracteres). VARCHAR pode armazenar qualquer string .</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1: VARCHAR(3) pode armazenar até: 7c8</li>
+                            <li>Ex2: VARCHAR(7) pode armazenar até: 64frg9j</li>
+                        </ul>
+                    </article>
+                </section>
+                <section id="binarios">
+                    <h1>Dados Binários</h1>
+                    <article class="dado">
+                        <h2>BINARY</h2>
+                        <h3>Definição</h3>
+                        <p>Lsicing elit. Alivel saepe, labore eveniet ad, ullam omnis est incidunt. Ullam ducimus minima eaque natus quae deleniti fugiat!</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1:</li>
+                            <li>Ex2:</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>VARBINARY</h2>
+                        <h3>Definição</h3>
+                        <p>Lorem ipsum dias dignissimos aspernatur quis labore assumenda?</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1:</li>
+                            <li>Ex2:</li>
+                        </ul>
+                    </article>
+                </section>
+                <section id="temporais">
+                    <h1>Dados Temporais</h1>
+                    <article class="dado">
+                        <h2>TIME</h2>
+                        <h3>Definição</h3>
+                        <p>iosam, dicta repellat voluptatum, deleniti reiciendis omnis dolorum similique neque nesciunt illo rerum sapiente quis aspernatur non veritatis? Quo, voluptate minus!</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1:</li>
+                            <li>Ex2:</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>DATE</h2>
+                        <h3>Definição</h3>
+                        <p>periam mollitia earum, doloribus quo porro recusandae?</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1:</li>
+                            <li>Ex2:</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>TIMESTAMP</h2>
+                        <h3>Definição</h3>
+                        <p>t, mollitia nisi nam ut eligendi cumque reiciendis voluptates possimus a debitis necessitatibus corporis.</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1:</li>
+                            <li>Ex2:</li>
+                        </ul>
+                    </article>
+                </section>
+                <section id="grandes">
+                    <h1>Dados Grandes</h1>
+                    <article class="dado">
+                        <h2>CLOB</h2>
+                        <h3>Definição</h3>
+                        <p>eniti praesentium quam, dignissimos, sed maiores tempora assumenda atque ad veritatis ea dolorem! Odit repellat excepturi dolorem!</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1:</li>
+                            <li>Ex2:</li>
+                        </ul>
+                    </article>
+                    <article class="dado">
+                        <h2>BLOB</h2>
+                        <h3>Definição</h3>
+                        <p>ernatur iste. Commodi perspiciatis nulla fugit sint nesciunt necessitatibus eligendi officiis, distinctio neque pariatur!</p>
+                        <h3>Exemplos</h3>
+                        <ul>
+                            <li>Ex1:</li>
+                            <li>Ex2:</li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div id="dev">
+                <img id="perfil" src="./src/assets/perfil.jpeg" alt="perfil">
+                <h5>Desenvolvedor e Pesquisador:</h5>
+                <p>Rafael Novaes Pereira</p>
+            </div>
+            <div id="nomes">
+                <h5>Colaboradores de Pesquisa:</h5>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="autores">
+                <h5>Autores Referência:</h5>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="cont">
+                <ul>
+                    <li title="LinkedIn"><a href="https://www.linkedin.com/in/ADoAAFJxUSMBQof_V2BAeX07KhUwUXLBKLbSsIU/"><img src="./src/assets/linkedin.png" alt="linkedin"></a></li>
+                    <li title="GitHub"><a href="https://github.com/Rafael-devtech"><img src="./src/assets/github.png" alt="github"></a></li>
+                </ul>
+            </div>
+            <h6>&copy; 2025 - Todos os direitos reservados</h6>
+        </footer>
+    </div>
+</body>
+</html>

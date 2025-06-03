@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f7f7f7;
+    font-family: "Raleway", sans-serif;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background-image: url('../assets/fundoh.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 240x;
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+    color:#0d4479;
+    font-size: 30px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 5px #0b55ff;
+    animation: pulse 6s infinite;
+}
+@keyframes pulse{
+    0%{
+        opacity: 100%;
+        text-shadow: 0 0 6px #0b55ff;
+    }
+    50%{
+        opacity: 60%;
+        text-shadow: 0 0 4px #0b55ff;
+    }
+    100%{
+        opacity: 100%;
+        text-shadow: 0 0 6px #0b55ff;
+    }
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    list-style-type: none;
+    padding: 10px;
+}
+header nav ul li{
+    padding: 7px;
+    margin: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 3px #555555;
+}
+header nav ul li:hover{
+    background: #dfdfdf;
+}
+header nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 0 1px #0b0357;
+    color: #002472;
+}
+header nav ul li a:hover{
+    color: #71088b;
+    text-shadow: 0 0 1px #71088b;
+    text-decoration: underline 2px #d428ff;
+}
+#conteudo{
+    grid-template-columns: 1fr;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("../assets/fundogeral.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main section{
+    padding: 30px; 
+    margin-bottom: 400px;  
+    background: #f7f7f7;
+    box-shadow: 0 0 15px #459eb4;
+}
+main section h1{
+    margin-bottom: 60px;
+    text-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    color: #162f6b;
+    width: 100%;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main article{
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 40px;
+    box-shadow: 0 0 5px #000;
+    background: #d0e5ff;
+    color: #0b0357;
+    border-radius: 20px;
+    border: 2px groove #2a3188;
+}
+main article h2{
+    text-align: center;
+    justify-content: center;
+    height: 70px;
+    font-size: 35px;
+}
+
+main article ul{
+    list-style-type: none;
+}
+footer{
+    background-image: url('../assets/fundoh.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 0 10px #459eb4;
+    text-align: center;
+    flex-direction: column;
+    max-width: 100%;
+    color:#162f6b;
+    padding: 20px;
+}
+footer #dev{
+    margin: 20px;
+    margin-bottom: 30px;
+}
+footer #perfil{
+    width: 200px;
+    box-shadow: 3px 1px 5px #000;
+    border-radius: 50px;
+    transition: transform 2s;
+}
+footer #perfil:hover{
+    transform: rotateX(50deg);
+}
+footer li{
+    list-style-type: none;
+}
+footer #cont img{
+    margin: 5px;
+    padding: 10px;
+    width: 40px;
+    box-shadow: 0 0 10px black;
+    border-radius: 50px;
+}
+footer #cont img:hover{
+    background: #636363;
+}
+footer #cont li a{
+    display: flex;
+}
+footer h6{
+    text-align: right;
+}
