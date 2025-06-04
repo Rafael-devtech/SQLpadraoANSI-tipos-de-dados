@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* SELETOR UNIVERSAL */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* MUDANDO FONTE */
 body{
     background: #f7f7f7;
     font-family: "Raleway", sans-serif;
 }
+/* DEIXANDO FLEXIVEL COM COLUNAS */
 #container{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+/* COLOCANDO IMAGEM DE FUNDO NO HEADER */
 header{
     background-image: url('../assets/fundoh.jpg');
     background-attachment: fixed;
@@ -23,6 +27,7 @@ header{
     padding: 20px;
     text-align: center;
 }
+/* COLOCANDO TITULO COM ANIMAÇAO */
 header h1{
     color:#0d4479;
     font-size: 30px;
@@ -32,6 +37,7 @@ header h1{
     text-shadow: 0 0 5px #0b55ff;
     animation: pulse 6s infinite;
 }
+/* DEFININDO ANIMAÇAO DO TITULO */
 @keyframes pulse{
     0%{
         opacity: 100%;
@@ -70,6 +76,7 @@ header nav ul li a{
     text-shadow: 0 0 1px #0b0357;
     color: #002472;
 }
+/* COLOCANDO ANIMAÇAO AO PASSAR O MOUSE NA LISTA DO NAV */
 header nav ul li a:hover{
     color: #71088b;
     text-shadow: 0 0 1px #71088b;
@@ -79,8 +86,6 @@ header nav ul li a:hover{
     grid-template-columns: 1fr;
 }
 main{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     background-image: url("../assets/fundogeral.jpg");
     background-attachment: fixed;
@@ -119,10 +124,10 @@ main article h2{
     height: 70px;
     font-size: 35px;
 }
-
 main article ul{
     list-style-type: none;
 }
+/* COLOCANDO IMAGEM DE FUNDO NO FOOTER */
 footer{
     background-image: url('../assets/fundoh.jpg');
     background-position: center;
@@ -143,10 +148,11 @@ footer #perfil{
     width: 200px;
     box-shadow: 3px 1px 5px #000;
     border-radius: 50px;
-    transition: transform 2s;
+    transition: transform 1s;
 }
+/* DEFININDO ANIMAÇAO AO PASSAR O MOUSE NA IMAGEM */
 footer #perfil:hover{
-    transform: rotateX(50deg);
+    transform: rotate(360deg);
 }
 footer li{
     list-style-type: none;
