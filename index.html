@@ -69,27 +69,27 @@
                     <article class="dado">
                         <h2>FLOAT</h2>
                         <h3>Definição</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse tempore doloremque quaerat veniam. Tempore accusantium a, eveniet doloribus repellendus ex quas? Corporis sunt, cum quasi libero earum harum asperiores numquam.</p>
+                        <p>Número com casa decimal que pode variar na precisão, é usado como FLOAT(n), onde "n" define o número de bits para armazenar a parte fracionária, e pode variar de 1 a 53. A imprecisão na parte fracionária acontece pois é guardada como notação científica na máquina.</p>
                         <h3>Exemplos</h3>
                         <ul>
-                            <li>Ex1:</li>
-                            <li>Ex2:</li>
+                            <li>Ex1: FLOAT(4) pode guardar: 3,12</li>
+                            <li>Ex2: FLOAT(12) pode guardar: 9,54631</li>
                         </ul>
                     </article>
                     <article class="dado">
                         <h2>REAL</h2>
                         <h3>Definição</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste architecto blanditiis eos officiis. Itaque dolore sunt minima, aperiam quaerat odio placeat dicta dignissimos provident id necessitatibus nihil fugiat vero.</p>
+                        <p>Número real, que pode ter variação na precisão, e tem uma precisão menor que o DOUBLE PRECISION.</p>
                         <h3>Exemplos</h3>
-                        <ul>
-                            <li>Ex1:</li>
-                            <li>Ex2:</li>
+                        <ul> 
+                            <li>Ex1: 423,457</li>
+                            <li>Ex2: 857,846</li>
                         </ul>
                     </article>
                     <article class="dado">
                         <h2>DOUBLE PRECISION</h2>
                         <h3>Definição</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nostrum molestiae corrupti harum a dolor explicabo dolorem, magnam deleniti tempore laboriosam quibusdam saepe excepturi ipsa cum natus, odit nobis blanditiis.</p>
+                        <p>Número com casa decimal, pode ter variações na precisão e tem uma precisão simples e dupla (8 bytes para precisão), é ideia para aplicações científicas e estatísticas.</p>
                         <h3>Exemplos</h3>
                         <ul>
                             <li>Ex1:</li>
@@ -125,7 +125,7 @@
                     <article class="dado">
                         <h2>BINARY</h2>
                         <h3>Definição</h3>
-                        <p>Lsicing elit. Alivel saepe, labore eveniet ad, ullam omnis est incidunt. Ullam ducimus minima eaque natus quae deleniti fugiat!</p>
+                        <p>Guarda dados binários, ou seja cadeias de bytes, é usado como BINARY(n) onde "n" representa a quantidade exata de bytes de espaço para armazenamento, pode guardar imagens, áudios etc.</p>
                         <h3>Exemplos</h3>
                         <ul>
                             <li>Ex1:</li>
@@ -135,7 +135,7 @@
                     <article class="dado">
                         <h2>VARBINARY</h2>
                         <h3>Definição</h3>
-                        <p>Lorem ipsum dias dignissimos aspernatur quis labore assumenda?</p>
+                        <p>Guarda dados binários, ou seja cadeias de bytes, é usado como VARBINARY(n) onde "n" representa a quantidade máxima de bytes de espaço para armazenamento, pode guardar imagens, áudios etc.</p>
                         <h3>Exemplos</h3>
                         <ul>
                             <li>Ex1:</li>
@@ -148,7 +148,7 @@
                     <article class="dado">
                         <h2>TIME</h2>
                         <h3>Definição</h3>
-                        <p>iosam, dicta repellat voluptatum, deleniti reiciendis omnis dolorum similique neque nesciunt illo rerum sapiente quis aspernatur non veritatis? Quo, voluptate minus!</p>
+                        <p></p>
                         <h3>Exemplos</h3>
                         <ul>
                             <li>Ex1:</li>
@@ -158,11 +158,12 @@
                     <article class="dado">
                         <h2>DATE</h2>
                         <h3>Definição</h3>
-                        <p>periam mollitia earum, doloribus quo porro recusandae?</p>
+                        <p>Armazena datas (dia, mês e ano), estes são separados por hífen (-), barra (/) ou ponto (.). A sequência entre dia, mês e ano pode variar de ordem.</p>
                         <h3>Exemplos</h3>
                         <ul>
-                            <li>Ex1:</li>
-                            <li>Ex2:</li>
+                            <li>Ex1: 08/11/2000</li>
+                            <li>Ex2: 10-12-2018</li>
+                            <li>Ex3: 30.06.2020</li>
                         </ul>
                     </article>
                     <article class="dado">
@@ -181,21 +182,21 @@
                     <article class="dado">
                         <h2>CLOB</h2>
                         <h3>Definição</h3>
-                        <p>eniti praesentium quam, dignissimos, sed maiores tempora assumenda atque ad veritatis ea dolorem! Odit repellat excepturi dolorem!</p>
+                        <p>CLOB é a sigla de Character Large Object e armazena grandes quantidades de texto.</p>
                         <h3>Exemplos</h3>
                         <ul>
-                            <li>Ex1:</li>
-                            <li>Ex2:</li>
+                            <li>Ex1: Documentos</li>
+                            <li>Ex2: Artigos</li>
                         </ul>
                     </article>
                     <article class="dado">
                         <h2>BLOB</h2>
                         <h3>Definição</h3>
-                        <p>ernatur iste. Commodi perspiciatis nulla fugit sint nesciunt necessitatibus eligendi officiis, distinctio neque pariatur!</p>
+                        <p>BLOB é a sigla de Binary Large Object e armazena grandes quantidades de dados binários (cadeias de bytes), podendo armazenar até 2GB geralmente.</p>
                         <h3>Exemplos</h3>
                         <ul>
-                            <li>Ex1:</li>
-                            <li>Ex2:</li>
+                            <li>Ex1: Imagens</li>
+                            <li>Ex2: Áudios</li>
                         </ul>
                     </article>
                 </section>
@@ -207,27 +208,29 @@
                 <h5>Desenvolvedor e Pesquisador:</h5>
                 <p>Rafael Novaes Pereira</p>
             </div>
-            <div id="nomes">
-                <h5>Colaboradores de Pesquisa:</h5>
+            <div id="nomes" class="pessoas">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="titulo">Colaboradores de Pesquisa:</li>
+                    <li>Anna Beatriz Xavier Sales</li>
+                    <li>Gabriel do Carmo</li>
+                    <li>Lucas Ribeiro Tomaz</li>
+                    <li>Maria Estefany dos Santos Sena</li>
+                    <li>Maria Alice de Silos</li>
+                    <li>Naielly Vitória Santana Dis</li>
+                    <li>Pedro Henrique Santos Silva</li>
+                    <li>Roberta Sarges Silva</li>
+                    <li>Sophia Miranda dos Santos</li>
                 </ul>
             </div>
-            <div id="autores">
-                <h5>Autores Referência:</h5>
+            <div id="autores" class="pessoas">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="titulo">Autores Referência:</li>
+                    <li>Agniezka Kozubek-Krycun (Universidade de Varsóvia)</li>
+                    <li>Prof. Edberto Ferneda (USP)</li>
+                    <li>Allyn Grey de Almeida Lima (Unicamp)</li>
+                    <li>Aldo Zelen (Universidade de Zabreg)</li>
+                    <li>Christopher J. Date (Universidade de Cambridge)</li>
+                    <li>Hugh Darwen (IBM do Reino Unido)</li>
                 </ul>
             </div>
             <div id="cont">

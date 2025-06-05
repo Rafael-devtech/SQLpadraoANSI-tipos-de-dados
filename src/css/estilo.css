@@ -143,6 +143,7 @@ footer{
 footer #dev{
     margin: 20px;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 footer #perfil{
     width: 200px;
@@ -154,7 +155,31 @@ footer #perfil{
 footer #perfil:hover{
     transform: rotate(360deg);
 }
+footer h5{
+    text-align: center;
+    justify-content: center;
+}
+footer .pessoas{
+    display: flex;
+    margin-bottom: 10px;
+    color: #060038;
+    margin: 10px;
+    font-weight: 600;
+}
+footer .titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+#nomes{
+    justify-content: left;
+
+}
+#autores{
+    justify-content: right;
+}
 footer li{
+    display: flex;
+    margin-top: 10px;
     list-style-type: none;
 }
 footer #cont img{
